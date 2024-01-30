@@ -87,6 +87,67 @@
     margin:50px;
 }
 
+.footerFixed{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    color: white;
+    text-align: center;
+    height:80px;
+}
+
+.footerFixed img{
+    padding:10px;
+    width: 220px;
+    height:50px;
+}
+
+#instagram{
+    margin-top:12px;
+    margin-left:-8px;
+}
+
+.whatsapp img{
+    float:left;
+    margin:5px;
+}
+
+.logos{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    background:#485A4B;
+    width:60%;
+    font-family:gotham-light;
+    overflow:hidden;
+}
+
+.itemLogo{
+    margin:15px;
+    display:flex;
+}
+
+.logos i{
+    font-size:1.5em;
+    margin:10px;
+}
+
+.logos p{
+    text-align: left;
+    margin-left:15px;
+    margin-top:18px;
+    width:300px;
+    overflow:hidden;
+}
+
+.whatsapp{
+    background:#3A9713;
+    width:40%;
+}
+
 .rotasTexto p{
     margin-top:10%;
     margin-left:5%;
@@ -109,6 +170,7 @@
     display:flex;
     justify-content:center;
     padding:20px;
+    height:110px;
     border-top:solid 1px #C5C5C5;
     color:#8B9975;
     font-family:gotham-light;
