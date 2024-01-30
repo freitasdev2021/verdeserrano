@@ -1,0 +1,346 @@
+@font-face{
+    font-family:gotham-light;
+    src: url("../files/fontes/Gotham-Light.otf");
+}
+
+@font-face{
+    font-family:gotham-bold;
+    src: url("../files/fontes/Gotham-Bold.otf");
+}
+
+@font-face{
+    font-family:gotham-medium;
+    src: url("../files/fontes/Gotham-Medium.otf");
+}
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+    overflow-x:hidden;
+}
+
+.rotas{
+    background:#F8F8F8;
+    height:900px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#314839;
+}
+
+.rotasImagem{
+    float:left;
+    width:45%;
+}
+.rotasTexto{
+    justify-content:center;
+    align-items:center;
+    width:40%;
+    font-size:1.5em;
+    font-family:gotham-light;
+}
+
+.rotasItens{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.rotasWidget img{
+    mix-blend-mode: multiply;
+}
+
+.rotasWidget{
+    margin:30px;
+    width:100px;
+    text-align:center;
+    height:150px;
+}
+
+.mapa,.mapa img{
+    width:100%;
+}
+
+.mapa{
+    height:1300px;
+}
+
+.descricaoMapa{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:gotham-light;
+}
+
+.contentDescricao{
+    width:50%;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.descricaoMapa ul{
+    margin:50px;
+}
+
+.rotasTexto p{
+    margin-top:10%;
+    margin-left:5%;
+}
+
+.rotas h1{
+    font-family:gotham-bold;
+    margin:60px;
+    width:1100px;
+    text-align:center;
+    font-size:40px;
+}
+
+.rotasHeader{
+    display:flex;
+}
+
+.footerSolto{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    border-top:solid 1px #C5C5C5;
+    color:#8B9975;
+    font-family:gotham-light;
+}
+
+.footerSolto p{
+    margin:3px;
+}
+
+#politicaPrivacidade{
+    text-decoration:underline;
+}
+
+header{
+    background: url("../files/imagens/MDR_FITNESS CENTER_LD.jpg");
+    height:874px;
+    width:100%;
+}
+
+main{
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.descricao{
+    background:#F5E8DF;
+    height:600px;
+    width:100%;
+    align-items:center;
+}
+
+.segundaDescricao{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.imagemDescricao,.textoDescricao{
+    width:50%;
+}
+
+.conteudoDescricao{
+    margin:20px;
+}
+
+.conteudoTextoDescricao{
+   height:615px;
+}
+
+.conteudoTextoDescricao h1{
+    margin-top:25px;
+    width:80%;
+    font-size:30px;
+    margin:30px;
+    font-family:gotham-bold;
+    color:#314839;
+}
+
+#textoDescricao{
+    margin-top:20px;
+    width:80%;
+    color:#314839;
+    margin:30px;
+    font-family:gotham-light;
+}
+
+.gridDescricao{
+    display:flex;
+    margin-left:20px;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.plantas{
+    background:#F5E8DF;
+    height:600px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    margin-top:-4px;
+}
+
+.plantas img{
+    width:510px;
+    height:306px;
+    margin-right:-100px;
+}
+
+.gridDescricao p{
+    margin-top:20px;
+    width:80%;
+    color:#314839;
+    font-family:gotham-light;
+}
+
+.itemGridDescricao{
+    /* margin:10px; */
+    width:250px;
+    display:flex;
+    flex-direction:column;
+}
+
+.itemGridDescricao img{
+    width:80px;
+    height:80px;
+}
+
+#btnMapa{
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+
+.headerDescricao{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    align-items:center;
+    text-align:center;
+    margin-top:40px;
+    font-family:gotham-light;
+    font-size:1.5em;
+    color:#B56B55;
+}
+
+.headerPlantas{
+    font-family:gotham-bold;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-size:1.5em;
+    color:#B56B55;
+}
+
+.headerPlantas h1{
+    margin:20px;
+}
+
+.headerDescricao h1{
+    margin:20px;
+}
+
+.headerDescricao h1{
+    width:1000px;
+}
+
+.headerDescricao h3{
+    width:1200px;
+}
+
+.descricaoGrid{
+    justify-content:center;
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    margin-top:100px;
+}
+
+.descricaoItem img{
+    mix-blend-mode: multiply;
+}
+
+.descricaoItem{
+    text-align:center;
+    margin:10px;
+    width:180px;
+    font-family:gotham-light;
+    color:#B56B55;
+}
+
+.btn-info{
+    color:white;
+    padding:20px;
+    background:#af5f48;
+    border:solid #af5f48;
+    margin:10px;
+    font-family:gotham-light;
+}
+
+#grid{
+    width:70%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.gridItem{
+    width:228px;
+    height:180px;
+    text-align:center;
+    font-family:gotham-light;
+    font-size:15px;
+    color:#314839;
+    /* border:solid;
+    background:red; */
+    margin:5px;
+}
+
+.gridItem img{
+    width:228px;
+    height:154px;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background:#C3CC99;
+    opacity:0.8;
+    padding:10px;
+}
+
+#subheader{
+    background:url("../files/imagens/img-lp.jpg");
+    height:652px;
+}
+
+nav img{
+    mix-blend-mode: multiply;
+}
+
+#labelGrid{
+    width:100%;
+    margin:10px;
+    padding:20px;
+    text-align:center;
+    font-family:gotham-bold;
+    color:#314839;
+}

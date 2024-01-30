@@ -1,0 +1,4 @@
+Caso não saiba usar o font-face, pode usar a fonte Montserrat no lugar.
+
+
+https://fonts.google.com/specimen/Montserrat
