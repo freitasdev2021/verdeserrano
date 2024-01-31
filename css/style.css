@@ -486,6 +486,18 @@ main{
     margin:5px;
 }
 
+.gridItem i{
+    background:white;
+    color:#314839;
+    float:right;
+    padding:5px;
+    font-size:10px;
+    margin-top:-20px;
+    margin-right:7px;
+    position:relative;
+    z-index:10;
+}
+
 .gridItem img{
     width:228px;
     height:154px;
@@ -498,6 +510,38 @@ nav{
     background:#C3CC99;
     opacity:0.8;
     padding:10px;
+}
+
+.imagensPlantas{
+    display:flex;
+}
+
+.imagensPlantas div{
+    display:flex;
+    flex-direction:column;
+    margin:5px;
+    align-items:center;
+}
+
+.imagensPlantas span{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin:5px;
+    font-family:gotham-bold;
+}
+
+.imagensPlantas p{
+    color:#AF5F48;
+    margin:5px;
+    font-size:1.5em;
+}
+
+.imagensPlantas i{
+    color:white;
+    background:#A1B88A;
+    padding:10px;
+    font-size:15px;
 }
 
 #subheader{
