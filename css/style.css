@@ -161,6 +161,115 @@
     font-size:40px;
 }
 
+.form{
+    background:RGBA( 0, 0, 0, 0.7 );
+    width:70%;
+    height:72%;
+    overflow:hidden;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.headerForm{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.headerForm h1{
+    color:white;
+    width:400px;
+    font-family:gotham-bold;
+    text-align:center;
+    padding:25px;
+}
+
+.form form{
+    height:550px;
+    width:519px;
+    background:#485A4B;
+    float:right;
+    position:absolute;
+    margin-right:-200px;
+    margin-top:120px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.inputs{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.inputs input,.inputs select,.inputs textarea{
+    margin:10px;
+    padding:20px;
+    border-radius:5px;
+    border:solid white;
+    outline: none;
+    resize:none;
+}
+
+.inputs select{
+    color:#314839;
+}
+
+.inputs input::placeholder{
+   color:#314839;
+}
+
+.inputs textarea::placeholder{
+    color:#314839;
+ }
+
+.btn-enviar{
+    color:white;
+    background:#af5f48;
+    border:solid #af5f48;
+    width:51%;
+}
+
+.btn-recaptcha{
+    width:44%;
+    background:#FFFFFF;
+    color:#C5C5C5;
+    border: solid #FFFFFF;
+}
+
+.buttonsForm{
+    width:97%;
+    display:flex;
+    align-items:center;
+    /* background:red; */
+    justify-content:center;
+    font-family:gotham-light;
+}
+
+.buttonsForm button{
+    margin:5px;
+    padding:15px;
+}
+
+.inputs textarea{
+    width:85%;
+}
+
+input[name='nome']{
+    width:85%;
+}
+
+.inputs select{
+    width:45%;
+}
+
+.input-50{
+    width:36%;
+}
+
 .rotasHeader{
     display:flex;
 }
@@ -188,6 +297,8 @@ header{
     background: url("../files/imagens/MDR_FITNESS CENTER_LD.jpg");
     height:874px;
     width:100%;
+    background-size:100%;
+    background-repeat:no-repeat;
 }
 
 main{
@@ -392,6 +503,8 @@ nav{
 #subheader{
     background:url("../files/imagens/img-lp.jpg");
     height:652px;
+    background-size:100%;
+    background-repeat:no-repeat;
 }
 
 nav img{
