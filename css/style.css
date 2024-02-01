@@ -512,6 +512,25 @@ nav{
     padding:10px;
 }
 
+.listSubheader{
+    background:rgb(150, 165, 113,0.9);
+    width:40%;
+    height:30%;
+    float:right;
+    font-family:gotham-light;
+    color:white;
+    margin-top:100px;
+    padding:30px;
+}
+
+.listSubheader ul{
+    margin:18px;
+}
+
+.listSubheader ul li{
+    margin:10px;
+}
+
 .imagensPlantas{
     display:flex;
 }
@@ -546,7 +565,7 @@ nav{
 
 #subheader{
     background:url("../files/imagens/img-lp.jpg");
-    height:652px;
+    height:552px;
     background-size:100%;
     background-repeat:no-repeat;
 }
