@@ -39,4 +39,8 @@ jQuery(function(){
             console.log(resposta)
         })
     })
+    //
+    $(".whatsapp").on("click",function(){
+        window.location.href="https://wa.me/5531983086235"
+    })
 })
