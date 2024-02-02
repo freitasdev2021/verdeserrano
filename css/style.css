@@ -13,6 +13,7 @@
     src: url("../files/fontes/Gotham-Medium.otf");
 }
 
+/*CODIGO NORMAL*/
 *{
     margin:0;
     padding:0;
@@ -231,6 +232,7 @@
     background:#af5f48;
     border:solid #af5f48;
     width:51%;
+    cursor:pointer;
 }
 
 .btn-recaptcha{
@@ -294,7 +296,7 @@ input[name='nome']{
 }
 
 header{
-    background: url("../files/imagens/MDR_FITNESS CENTER_LD.jpg");
+    background: url("../files/imagens/MDR_FITNESS CENTER_LD.jpg") !important;
     height:874px;
     width:100%;
     background-size:100%;
@@ -320,6 +322,7 @@ main{
     width:100%;
     display:flex;
     justify-content:space-between;
+    flex-wrap:wrap;
 }
 
 .imagemDescricao,.textoDescricao{
@@ -355,12 +358,13 @@ main{
     display:flex;
     margin-left:20px;
     width:100%;
+    flex-direction:row;
     flex-wrap:wrap;
 }
 
 .plantas{
     background:#F5E8DF;
-    height:600px;
+    height:1400px;
     width:100%;
     display:flex;
     justify-content:center;
@@ -442,6 +446,7 @@ main{
     display:flex;
     width:100%;
     flex-direction:row;
+    flex-wrap:wrap;
     margin-top:100px;
 }
 
@@ -533,6 +538,8 @@ nav{
 
 .imagensPlantas{
     display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .imagensPlantas div{
@@ -581,4 +588,169 @@ nav img{
     text-align:center;
     font-family:gotham-bold;
     color:#314839;
+}
+
+/*MEDIA QUERYES*/
+@media only screen and (max-width: 1000px) {
+    header{
+        background:url("../files/imagens/MDR_FITNESS CENTER_LD.jpg");
+    }
+    
+    nav img{
+        width:200px;
+        margin-right:40px;
+    }
+
+    .form{
+        background:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+    }
+
+    .headerForm{
+        font-size:10px;
+    }
+
+    .form form{
+        width:85%;
+        height:700px;
+        margin:0;
+        margin-top:100px;
+        /* margin-right:5px; */
+    }
+
+    .form input,.form select,.form textarea{
+        width:100%;
+    }
+
+    .buttonsForm button{
+        font-size:8px;
+    }
+
+    #subheader{
+        height:100px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .listSubheader{
+        height:150px;
+        width:85%;
+        font-size:10px;
+        padding:10px;
+        position:absolute;
+        /* margin-right:30px; */
+        margin-bottom:200px;
+    }
+
+    #labelGrid{
+        font-size:10px;
+    }
+
+    .headerDescricao h1,.headerDescricao h3{
+        width:400px;
+        overflow-wrap: break-word;
+    }
+
+    .segundaDescricao{
+        width:100%;
+        display:flex;
+        /* justify-content:space-between; */
+        flex-wrap:wrap;
+        /* height:1200px; */
+    }
+
+    .imagemDescricao,.textoDescricao{
+        width:100%;
+        margin:0;
+    }
+
+    .textoDescricao{
+        height:900px;
+    }
+
+    .itemGridDescricao{
+        width:120px;
+    }
+
+    .headerDescricao{
+        font-size:10px;
+    }
+
+    .headerDescricao h3{
+        width:250px;
+    }
+
+    .gridDescricao{
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .mapa{
+        height:700px;
+    }
+
+    .headerPlantas{
+        font-size:10px;
+    }
+
+    .plantas img{
+        width:500px;
+        margin-right:5px;
+        background:none;
+        background:#DDCDC2;
+        margin:20px;
+    }
+
+    .descricao{
+        height:1000px;
+    }
+
+    .rotasWidget{
+        width:100%;
+    }
+
+    .rotasImagem{
+        width:100%;
+    }
+
+    .rotasTexto{
+        text-align:center;
+        width:50%;
+        margin-left:210px;
+    }
+
+    .rotasItens{
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .rotasContent{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    /* .footerSolto{
+        display:none;
+    } */
+
+    .footerFixed{
+        display:none;
+    }
+
+    .rotasHeader{
+        margin:0;
+        float:left;
+    }
+
+    .rotasHeader h1{
+        font-size:10px;
+    }
 }

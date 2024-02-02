@@ -17,21 +17,21 @@
             <img src="files/imagens/Grupo 1876.jpg">
         </nav>
         <div class="form">
-            <form>
+            <form action="127.0.0.1:8000/leads/api/create">
                 <span class="headerForm">
                     <h1>Cadastre-se para falar com um especialista.</h1>
                 </span>
                 <div class="inputs">
-                    <input type="name" name="nome" placeholder="NOME">
-                    <input type="email" name="email" class="input-50" placeholder="EMAIL">
-                    <input type="tel" name="telefone" class="input-50" placeholder="TELEFONE">
-                    <select name="estado" class="input-50">
-                        <option value="">ESTADO</option>
+                    <input type="name" name="nome" placeholder="NOME" maxlength="100" required>
+                    <input type="email" name="email" class="input-50" maxlength="100" placeholder="EMAIL" required>
+                    <input type="number" name="telefone" class="input-50" maxlength="11" placeholder="TELEFONE" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                    <select name="estado" class="input-50" required>
+                        
                     </select>
-                    <select name="cidade" name="cidade" class="input-50">
-                        <option value="">CIDADE</option>
+                    <select name="cidade" name="cidade" class="input-50" required>
+                        
                     </select>
-                    <textarea name="mensagem" placeholder="MENSAGEM"></textarea>
+                    <textarea name="mensagem" placeholder="MENSAGEM" required maxlength="250"></textarea>
                 </div>
                 <div class="buttonsForm">
                     <button class="btn-recaptcha" disabled>recaptcha</button>
@@ -179,9 +179,9 @@
         </article>
         <!--SEGUNDA PARTE DA DESCRICAO-->
         <article class="segundaDescricao">
-            <div class="imagemDescricao">
+            <!-- <div class="imagemDescricao">
                 <img src="files/imagens/380e530098fe700f7a79ff822985940d.jpg">
-            </div>
+            </div> -->
             <div class="textoDescricao">
                 <div class="conteudoTextoDescricao">
                     <h1>AQUI A SUSTENTABILIDADE COM A NATUREZA E COM O PROXIMO E UM COMPROMISSO</h1>
@@ -367,5 +367,7 @@
             <img src="files/imagens/zapzap.png">
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
