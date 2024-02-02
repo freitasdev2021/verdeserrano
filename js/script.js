@@ -26,7 +26,7 @@ jQuery(function(){
         e.preventDefault()
         $.ajax({
             method : "POST",
-            url : "http://127.0.0.1:8000/leads/api/create",
+            url : "api.php",
             data : {
                 nome     : $("input[name=nome]").val(),
                 telefone : $("input[name=telefone]").val(),
@@ -34,9 +34,6 @@ jQuery(function(){
                 estado   : $("select[name=estado]").val(),
                 cidade   : $("select[name=cidade]").val(),
                 mensagem : $("textarea[name=mensagem]").val()
-            },
-            headers: {
-                'Origin': 'http://localhost'
             }
         }).done(function(resposta){
             console.log(resposta)
